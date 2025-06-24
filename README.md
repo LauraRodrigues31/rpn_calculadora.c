@@ -27,6 +27,9 @@ Exemplo de expressão RPN:
     - Expressão mal formada
     - Operadores em excesso
     - Tokens inválidos
+ 
+## Estrutura do projeto
+- arquivo: rpn_calculadora.c
 
 ## ⚙️ Como Executar o Projeto
 
