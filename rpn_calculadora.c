@@ -50,6 +50,11 @@ int ehOperador(char *token) {
             strcmp(token, "*") == 0 || strcmp(token, "/") == 0);
 }
 
+//inicializaPilha: coloca topo = -1 (pilha vazia)
+//estaVazia: retorna se a pilha está vazia
+//push: empilha um número
+
+pop: desempilha e retorna um número
 int main() {
     Pilha p;
     inicializaPilha(&p);
@@ -110,3 +115,16 @@ int main() {
 
     return 0;
 }
+
+//| Ação               | Pilha |
+//| ------------------ | ----- |
+//| push(5)            | 5     |
+//| push(1)            | 5 1   |
+//| push(2)            | 5 1 2 |
+//| + → pop(2,1) → 3   | 5 3   |
+//| push(4)            | 5 3 4 |
+//| \* → pop(4,3) → 12 | 5 12  |
+//| + → pop(12,5) → 17 | 17    |
+//| push(3)            | 17 3  |
+//| - → pop(3,17) → 14 | 14    |
+// Resultado: 14.00
